@@ -1,11 +1,7 @@
 const chai = require('chai');
-const sinon = require('sinon');
-const sinonChai = require('sinon-chai');
 const redisUtils = require('../lib/redisUtils');
-const { expect } = chai;
 
-chai.use(sinonChai);
-// chai.should();
+const { expect } = chai;
 
 describe('redis utils', () => {
   describe('create client', () => {
