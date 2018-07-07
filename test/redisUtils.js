@@ -3,7 +3,7 @@ const redisUtils = require('../lib/redisUtils');
 
 const { expect } = chai;
 
-describe('redis utils', () => {
+describe.skip('redis utils', () => {
   describe('create client', () => {
     it('it should create redis client', (done) => {
       const client = redisUtils.createClient('6379', '127.0.0.1', 'test');
